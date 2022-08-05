@@ -1,4 +1,7 @@
 @import "nullstyle.scss";
+body{
+  background-color: rgb(230, 248, 194);
+}
 p{
     background-color: rgb(160, 102, 102);
   }
@@ -6,7 +9,7 @@ ul{
    background-color: rgb(235, 192, 192);
     li {
      list-style: none;
-     color: red;
+    color: aqua;
      text-align: center;
    }
  } 
