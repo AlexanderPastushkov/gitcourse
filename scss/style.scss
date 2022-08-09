@@ -199,11 +199,7 @@ body {
     object-position: right;
   }
 }
-@media (max-width: 850px) {
-  .main-block__image img {
-    display: none;
-  }
-}
+
 @media (max-width: 992px) {
   .main-block__image img {
     opacity: 0.5;
@@ -216,5 +212,9 @@ body {
     padding: 124px 0px 191px 0px;
   }
 }
-
+@media (max-width: 500px) {
+  .main-block__image img {
+    opacity: 0.3;
+  }
+}
 //footer**********************************
