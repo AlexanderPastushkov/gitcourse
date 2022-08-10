@@ -248,11 +248,6 @@ body {
   margin: 10px 0;
 }
 
-@media (max-width: 479px) {
-  .main-block__button {
-    flex: 1 1 100%;
-  }
-}
 .main-block__button:not(:last-child) {
   margin-right: 10px;
 }
@@ -303,6 +298,12 @@ body {
 @media (max-width: 756px) {
   .main-block__image img {
     display: none;
+  }
+}
+@media (max-width: 479px) {
+  .main-block__button {
+    flex: 1 1 100%;
+    margin-right: 0px !important;
   }
 }
 .services__body {
