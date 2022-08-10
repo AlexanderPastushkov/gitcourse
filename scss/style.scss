@@ -225,9 +225,9 @@ body {
     padding: 124px 0px 191px 0px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 756px) {
   .main-block__image img {
-    opacity: 0.3;
+    display: none;
   }
 }
 
@@ -253,6 +253,7 @@ body {
   padding: 35px;
   height: 100%;
 }
+
 .item-service > *:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -283,7 +284,14 @@ body {
 .item-service_green > * {
   color: #fff;
 }
+@media (max-width: 756px) {
+  .services__item {
+    box-shadow: -6px -7px 15px rgba(0, 0, 0, 0.09);
 
+    padding: 35px;
+    height: 100%;
+  }
+}
 @media (max-width: 479px) {
   .services__body {
     display: flex;
