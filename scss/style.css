@@ -83,6 +83,7 @@ body {
   font-family: Montserrat;
   color: #252b42;
   font-weight: 500;
+  background-color: #fafafa;
   line-height: 1;
   height: 100%;
   font-size: 14px;
@@ -193,6 +194,30 @@ body {
   z-index: 2;
 }
 
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+.header-block__title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #252b42;
+  line-height: 142%;
+  font-family: Montserrat;
+}
+.header-block__title:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.header-block__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  color: #737373;
+  line-height: 142%;
+  font-family: Montserrat;
+}
+
 .main-block {
   position: relative;
 }
@@ -247,7 +272,6 @@ body {
   text-align: center;
   margin: 10px 0;
 }
-
 .main-block__button:not(:last-child) {
   margin-right: 10px;
 }
@@ -310,7 +334,6 @@ body {
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, auto));
   gap: 15px;
-  align-items: flex-start;
 }
 
 .services__item {
@@ -322,10 +345,6 @@ body {
 
 .item-service > *:not(:last-child) {
   margin-bottom: 10px;
-}
-
-.item-service_green {
-  background-color: #0d5c63;
 }
 
 .item-service__icon {
@@ -351,6 +370,9 @@ body {
   color: #737373;
 }
 
+.item-service_green {
+  background-color: #0d5c63;
+}
 .item-service_green > * {
   color: #fff;
 }
@@ -380,4 +402,59 @@ body {
   .services__item > * {
     text-align: center;
   }
+}
+.advantages {
+  padding: 80px 0;
+}
+
+.advantages__header {
+  margin: 0px 0px 50px 0px;
+}
+
+.advantages__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -15px -30px;
+}
+
+.advantages__column {
+  padding: 0 15px;
+  flex: 0 1 25%;
+  margin: 0px 0px 30px 0px;
+}
+
+@media (max-width: 992px) {
+  .advantages__column {
+    flex: 0 1 50%;
+  }
+}
+@media (max-width: 560px) {
+  .advantages__column {
+    flex: 0 1 100%;
+  }
+  .advantages__column:last-child {
+    margin: 0;
+  }
+}
+.advantages__item {
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
+  font-weight: 700;
+}
+.advantages__item > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.advantages__value {
+  font-size: 40px;
+  line-height: 142%;
+}
+
+.advantages__text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: #737373;
 }
