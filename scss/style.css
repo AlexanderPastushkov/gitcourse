@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-._ibg img {
+.whoweare__video iframe, ._ibg img {
   position: absolute;
   top: 0;
   left: 0;
@@ -171,6 +171,10 @@ body {
   color: #737373;
   line-height: 171.4285714286%;
   font-weight: 600;
+  transition: 0.2s;
+}
+.menu__link:hover {
+  color: #0d5c63;
 }
 
 @media (max-width: 479px) {
@@ -279,11 +283,20 @@ body {
 .main-block__button_orange {
   background: #ff7b47;
   color: #fff;
+  transition: 0.2s;
+}
+.main-block__button_orange:hover {
+  background-color: #252b42;
 }
 
 .main-block__button_border {
   color: #0d5c63;
   border: 1px solid #0d5c63;
+}
+.main-block__button_border:hover {
+  border: 1px solid #0d5c63;
+  background-color: #0d5c63;
+  color: #fff;
 }
 
 @media (max-width: 479px) {
@@ -532,4 +545,89 @@ body {
 .item-practice__img {
   padding: 0px 0px 60% 0px;
   display: block;
+}
+
+.whoweare {
+  padding: 100px 0px 130px 0px;
+}
+
+.whoweare__header {
+  margin-bottom: 100px;
+}
+
+.whoweare__body {
+  display: flex;
+}
+
+.whoweare__video {
+  flex: 0 0 57%;
+  position: relative;
+}
+.whoweare__video iframe {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.whoweare__content {
+  flex: 1 1 auto;
+  padding-left: 120px;
+  padding-top: 20px;
+}
+
+.whoweare__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+.whoweare__title:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.whoweare__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.whoweare__items {
+  margin-top: 50px;
+}
+
+.whowerare__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.item-whoweare {
+  display: flex;
+}
+
+.item-whoweare__icon {
+  flex: 0 0 32px;
+}
+
+.item-whoweare__body {
+  flex: 1 1 auto;
+  padding-left: 20px;
+}
+
+.item-whoweare__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+.item-whoweare__title:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.item-whoweare__text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 170%;
+  letter-spacing: 0.2px;
+  color: #737373;
 }
