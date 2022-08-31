@@ -3,6 +3,6 @@ console.log(
 
 )
 function showMessage(){
-    alert('Welcome to RELVISE!');
+    alert('Саша + Даша = LOVE');
 }
 showMessage();
